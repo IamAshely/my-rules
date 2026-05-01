@@ -1,0 +1,35 @@
+# ====================== Threads 完整规则 ======================
+# 更新日期：2026-05
+# 建议放在规则列表较前面位置
+
+# Threads 核心域名
+DOMAIN-SUFFIX,threads.com,PROXY
+DOMAIN-SUFFIX,threads.net,PROXY
+
+# Instagram 相关（Threads 与 Instagram 深度绑定，必须包含）
+DOMAIN-SUFFIX,instagram.com,PROXY
+DOMAIN-SUFFIX,cdninstagram.com,PROXY
+DOMAIN-SUFFIX,ig.me,PROXY
+DOMAIN-SUFFIX,igcdn.com,PROXY
+
+# Meta / Facebook 相关（图片、视频、登录、API 高度依赖）
+DOMAIN-SUFFIX,facebook.com,PROXY
+DOMAIN-SUFFIX,fb.com,PROXY
+DOMAIN-SUFFIX,fbcdn.net,PROXY
+DOMAIN-SUFFIX,fbsbx.com,PROXY
+DOMAIN-SUFFIX,facebook.net,PROXY
+DOMAIN-SUFFIX,meta.com,PROXY
+
+# 常用子域名与 CDN 增强
+DOMAIN-SUFFIX,scontent.cdninstagram.com,PROXY
+DOMAIN-SUFFIX,static.cdninstagram.com,PROXY
+DOMAIN-SUFFIX,video.cdninstagram.com,PROXY
+
+# 关键词兜底（防止漏掉新子域名）
+DOMAIN-KEYWORD,threads,PROXY
+DOMAIN-KEYWORD,instagram,PROXY
+DOMAIN-KEYWORD,fbcdn,PROXY
+
+# 可选：如果图片/视频仍加载慢，可再添加以下
+# DOMAIN-SUFFIX,scontent.xx.fbcdn.net,PROXY
+# DOMAIN-SUFFIX,external.xx.fbcdn.net,PROXY
