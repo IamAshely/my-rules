@@ -1,0 +1,28 @@
+# ==================== 微信全部直连 ====================
+# 域名关键词 + User-Agent 双保险
+
+DOMAIN-KEYWORD,wechat,DIRECT
+DOMAIN-SUFFIX,wechat.com,DIRECT
+DOMAIN-SUFFIX,wx.qq.com,DIRECT
+DOMAIN-SUFFIX,wx2.qq.com,DIRECT
+DOMAIN-SUFFIX,wx3.qq.com,DIRECT
+DOMAIN-SUFFIX,wx4.qq.com,DIRECT
+DOMAIN-SUFFIX,wx5.qq.com,DIRECT
+DOMAIN-SUFFIX,wx6.qq.com,DIRECT
+DOMAIN-SUFFIX,wx7.qq.com,DIRECT
+DOMAIN-SUFFIX,wx8.qq.com,DIRECT
+DOMAIN-SUFFIX,wx9.qq.com,DIRECT
+DOMAIN-SUFFIX,wx10.qq.com,DIRECT
+DOMAIN-SUFFIX,wx11.qq.com,DIRECT
+DOMAIN-SUFFIX,wx12.qq.com,DIRECT
+
+# 微信常用 CDN 和子域名
+DOMAIN-SUFFIX,sgminorshort.wechat.com,DIRECT
+DOMAIN-SUFFIX,weixin.qq.com,DIRECT
+DOMAIN-SUFFIX,wxapp.wechat.com,DIRECT
+DOMAIN-SUFFIX,mp.weixin.qq.com,DIRECT
+
+# User-Agent 匹配（防止微信通过其他域名走代理）
+USER-AGENT,WeChat*,DIRECT
+USER-AGENT,wechat*,DIRECT
+USER-AGENT,MicroMessenger*,DIRECT
