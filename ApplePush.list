@@ -1,0 +1,22 @@
+# Apple Push Notification Service
+DOMAIN-SUFFIX,push.apple.com,ApplePush
+DOMAIN,api.push.apple.com,ApplePush
+DOMAIN,courier.push.apple.com,ApplePush
+DOMAIN,gateway.push.apple.com,ApplePush
+
+# Apple CDN / DNS 相关
+DOMAIN-SUFFIX,akadns.net,ApplePush
+DOMAIN-KEYWORD,apple.com.edgekey.net,ApplePush
+
+# APNs 常见 IP 段
+IP-CIDR,17.249.0.0/16,ApplePush,no-resolve
+IP-CIDR,17.252.0.0/16,ApplePush,no-resolve
+IP-CIDR,17.57.144.0/22,ApplePush,no-resolve
+IP-CIDR,17.188.128.0/18,ApplePush,no-resolve
+IP-CIDR,17.188.20.0/23,ApplePush,no-resolve
+
+# IPv6 APNs
+IP-CIDR6,2620:149:a44::/48,ApplePush,no-resolve
+IP-CIDR6,2403:300:a42::/48,ApplePush,no-resolve
+IP-CIDR6,2403:300:a51::/48,ApplePush,no-resolve
+IP-CIDR6,2a01:b740:a42::/48,ApplePush,no-resolve
