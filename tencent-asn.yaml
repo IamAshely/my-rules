@@ -7,4 +7,4 @@
         - AS139341
         - AS134103
         - AS58835
-      policy: Tencent-Proxy   # 推荐用自定义策略组，便于切换
+      policy: DIRECT   # 推荐用自定义策略组，便于切换
