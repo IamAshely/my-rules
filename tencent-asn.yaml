@@ -1,10 +1,29 @@
-  - asn_set:
-      match:
-        - AS45090
-        - AS132203
-        - AS132591
-        - AS133478
-        - AS139341
-        - AS134103
-        - AS58835
-      policy: DIRECT   # 推荐用自定义策略组，便于切换
+# Tencent 全量直连规则集 - 专门给 Egern 使用
+# 用途：让所有腾讯相关流量走直连（国内优化更快）
+# 更新日期: 2026-05-14
+
+no_resolve: false
+
+asn_set:
+  - AS45090
+  - AS132203
+  - AS132591
+  - AS133478
+  - AS139341
+  - AS134103
+  - AS58835
+
+domain_suffix_set:
+  - tencent.com
+  - tencentcloud.com
+  - qq.com
+  - weixin.com
+  - wx.qq.com
+  - myqcloud.com
+  - qcloud.com
+  - cloud.tencent.com
+  - tencentcloudapi.com
+  - gtimg.com
+  - gdtimg.com
+  - idqqimg.com
+  - qlogo.cn
