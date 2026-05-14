@@ -1,0 +1,13 @@
+no_resolve: true
+
+domain_suffix_set:
+  - openai.com
+  - chatgpt.com
+  - oaistatic.com
+  - oaiusercontent.com
+  - anthropic.com
+  - claude.ai
+  - gemini.google.com
+  - deepmind.google
+  - grok.com
+  - x.ai
